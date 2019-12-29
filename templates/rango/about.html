@@ -1,0 +1,12 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+    <h1>
+        Hello! This is Rango!
+    </h1>
+    <br />
+    You have visited this page for {{visits_about}} times!
+    <br />
+    <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" />
+{% endblock %}
